@@ -1,0 +1,492 @@
+/* Design tokens for this concept prototype. */
+/* ---------- Global tier: Tailwind v4 theme as shipped in their bundle ---------- */
+:root {
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --color-red-50: oklch(97.1% .013 17.38);
+  --color-red-100: oklch(93.6% .032 17.717);
+  --color-red-200: oklch(88.5% .062 18.334);
+  --color-red-300: oklch(80.8% .114 19.571);
+  --color-red-400: oklch(70.4% .191 22.216);
+  --color-red-500: oklch(63.7% .237 25.331);
+  --color-red-600: oklch(57.7% .245 27.325);
+  --color-red-700: oklch(50.5% .213 27.518);
+  --color-red-800: oklch(44.4% .177 26.899);
+  --color-red-900: oklch(39.6% .141 25.723);
+  --color-red-950: oklch(25.8% .092 26.042);
+  --color-orange-100: oklch(95.4% .038 75.164);
+  --color-orange-400: oklch(75% .183 55.934);
+  --color-orange-500: oklch(70.5% .213 47.604);
+  --color-orange-800: oklch(47% .157 37.304);
+  --color-orange-900: oklch(40.8% .123 38.172);
+  --color-amber-50: oklch(98.7% .022 95.277);
+  --color-amber-100: oklch(96.2% .059 95.617);
+  --color-amber-200: oklch(92.4% .12 95.746);
+  --color-amber-300: oklch(87.9% .169 91.605);
+  --color-amber-400: oklch(82.8% .189 84.429);
+  --color-amber-500: oklch(76.9% .188 70.08);
+  --color-amber-600: oklch(66.6% .179 58.318);
+  --color-amber-700: oklch(55.5% .163 48.998);
+  --color-amber-800: oklch(47.3% .137 46.201);
+  --color-amber-900: oklch(41.4% .112 45.904);
+  --color-amber-950: oklch(27.9% .077 45.635);
+  --color-green-50: oklch(98.2% .018 155.826);
+  --color-green-100: oklch(96.2% .044 156.743);
+  --color-green-200: oklch(92.5% .084 155.995);
+  --color-green-300: oklch(87.1% .15 154.449);
+  --color-green-400: oklch(79.2% .209 151.711);
+  --color-green-500: oklch(72.3% .219 149.579);
+  --color-green-600: oklch(62.7% .194 149.214);
+  --color-green-700: oklch(52.7% .154 150.069);
+  --color-green-800: oklch(44.8% .119 151.328);
+  --color-green-900: oklch(39.3% .095 152.535);
+  --color-green-950: oklch(26.6% .065 152.934);
+  --color-emerald-100: oklch(95% .052 163.051);
+  --color-emerald-300: oklch(84.5% .143 164.978);
+  --color-emerald-400: oklch(76.5% .177 163.223);
+  --color-emerald-500: oklch(69.6% .17 162.48);
+  --color-emerald-600: oklch(59.6% .145 163.225);
+  --color-emerald-700: oklch(50.8% .118 165.612);
+  --color-emerald-800: oklch(43.2% .095 166.913);
+  --color-emerald-900: oklch(37.8% .077 168.94);
+  --color-teal-100: oklch(95.3% .051 180.801);
+  --color-teal-300: oklch(85.5% .138 181.071);
+  --color-teal-500: oklch(70.4% .14 182.503);
+  --color-teal-600: oklch(60% .118 184.704);
+  --color-teal-800: oklch(43.7% .078 188.216);
+  --color-teal-950: oklch(27.7% .046 192.524);
+  --color-cyan-50: oklch(98.4% .019 200.873);
+  --color-cyan-100: oklch(95.6% .045 203.388);
+  --color-cyan-200: oklch(91.7% .08 205.041);
+  --color-cyan-300: oklch(86.5% .127 207.078);
+  --color-cyan-500: oklch(71.5% .143 215.221);
+  --color-cyan-600: oklch(60.9% .126 221.723);
+  --color-cyan-900: oklch(39.8% .07 227.392);
+  --color-cyan-950: oklch(30.2% .056 229.695);
+  --color-sky-300: oklch(82.8% .111 230.318);
+  --color-sky-500: oklch(68.5% .169 237.323);
+  --color-blue-50: oklch(97% .014 254.604);
+  --color-blue-100: oklch(93.2% .032 255.585);
+  --color-blue-200: oklch(88.2% .059 254.128);
+  --color-blue-300: oklch(80.9% .105 251.813);
+  --color-blue-400: oklch(70.7% .165 254.624);
+  --color-blue-500: oklch(62.3% .214 259.815);
+  --color-blue-600: oklch(54.6% .245 262.881);
+  --color-blue-700: oklch(48.8% .243 264.376);
+  --color-blue-800: oklch(42.4% .199 265.638);
+  --color-blue-900: oklch(37.9% .146 265.522);
+  --color-blue-950: oklch(28.2% .091 267.935);
+  --color-violet-50: oklch(96.9% .016 293.756);
+  --color-violet-100: oklch(94.3% .029 294.588);
+  --color-violet-200: oklch(89.4% .057 293.283);
+  --color-violet-300: oklch(81.1% .111 293.571);
+  --color-violet-500: oklch(60.6% .25 292.717);
+  --color-violet-600: oklch(54.1% .281 293.009);
+  --color-violet-700: oklch(49.1% .27 292.581);
+  --color-violet-900: oklch(38% .189 293.745);
+  --color-violet-950: oklch(28.3% .141 291.089);
+  --color-purple-100: oklch(94.6% .033 307.174);
+  --color-purple-300: oklch(82.7% .119 306.383);
+  --color-purple-500: oklch(62.7% .265 303.9);
+  --color-purple-700: oklch(49.6% .265 301.924);
+  --color-purple-800: oklch(43.8% .218 303.724);
+  --color-purple-950: oklch(29.1% .149 302.717);
+  --color-fuchsia-600: oklch(59.1% .293 322.896);
+  --color-pink-100: oklch(94.8% .028 342.258);
+  --color-pink-300: oklch(82.3% .12 346.018);
+  --color-pink-500: oklch(65.6% .241 354.308);
+  --color-pink-600: oklch(59.2% .249 .584);
+  --color-pink-800: oklch(45.9% .187 3.815);
+  --color-pink-950: oklch(28.4% .109 3.907);
+  --color-rose-600: oklch(58.6% .253 17.585);
+  --color-gray-50: oklch(98.5% .002 247.839);
+  --color-gray-100: oklch(96.7% .003 264.542);
+  --color-gray-300: oklch(87.2% .01 258.338);
+  --color-gray-400: oklch(70.7% .022 261.325);
+  --color-gray-500: oklch(55.1% .027 264.364);
+  --color-gray-600: oklch(44.6% .03 256.802);
+  --color-gray-700: oklch(37.3% .034 259.733);
+  --color-gray-800: oklch(27.8% .033 256.848);
+  --color-gray-900: oklch(21% .034 264.665);
+  --color-gray-950: oklch(13% .028 261.692);
+  --color-neutral-100: oklch(97% 0 0);
+  --color-neutral-200: oklch(92.2% 0 0);
+  --color-neutral-900: oklch(20.5% 0 0);
+  --color-black: #000;
+  --color-white: #fff;
+  --spacing: .25rem;
+  --container-xs: 20rem;
+  --container-sm: 24rem;
+  --container-md: 28rem;
+  --container-lg: 32rem;
+  --container-xl: 36rem;
+  --container-2xl: 42rem;
+  --container-3xl: 48rem;
+  --container-4xl: 56rem;
+  --container-5xl: 64rem;
+  --container-6xl: 72rem;
+  --container-7xl: 80rem;
+  --text-xs: .75rem;
+  --text-xs--line-height: calc(1 / .75);
+  --text-sm: .875rem;
+  --text-sm--line-height: calc(1.25 / .875);
+  --text-base: 1rem;
+  --text-base--line-height: 1.5;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: calc(1.75 / 1.125);
+  --text-xl: 1.25rem;
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: calc(2 / 1.5);
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 1.2;
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: calc(2.5 / 2.25);
+  --text-6xl: 3.75rem;
+  --text-6xl--line-height: 1;
+  --text-7xl: 4.5rem;
+  --text-7xl--line-height: 1;
+  --text-8xl: 6rem;
+  --text-8xl--line-height: 1;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --tracking-tight: -.025em;
+  --tracking-normal: 0em;
+  --tracking-widest: .1em;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --radius-md: calc(var(--radius) - 2px);
+  --shadow-xs: 0 1px 2px 0 #0000000d;
+  --shadow-md: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+  --ease-in: cubic-bezier(.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, .2, 1);
+  --ease-in-out: cubic-bezier(.4, 0, .2, 1);
+  --animate-spin: spin 1s linear infinite;
+  --animate-pulse: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
+  --blur-xs: 4px;
+  --aspect-video: 16 / 9;
+  --default-transition-duration: .15s;
+  --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  --default-font-family: -apple-system-body, ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --default-mono-font-family: var(--font-mono);
+  --color-border: var(--border);
+}
+
+/* ---------- Semantic + component tier: light (their :root) ---------- */
+:root {
+  color-scheme: light;
+  --avatar-foreground: oklch(14.5% 0 0);
+  --sidebar-frame: oklch(25.2% 0 0);
+  --sidebar-active: var(--sidebar-accent);
+  --avatar-0: oklch(90% .04 230);
+  --avatar-1: oklch(88% .06 270);
+  --avatar-2: oklch(88% .06 300);
+  --avatar-3: oklch(90% .05 350);
+  --avatar-4: oklch(90% .05 25);
+  --avatar-5: oklch(92% .06 80);
+  --avatar-6: oklch(90% .05 175);
+  --avatar-7: oklch(90% .06 150);
+  --avatar-letter-0: oklch(91% .022 85);
+  --avatar-letter-1: oklch(91% .022 250);
+  --avatar-letter-2: oklch(91% .022 300);
+  --avatar-letter-3: oklch(91% .025 30);
+  --avatar-letter-4: oklch(91% .032 55);
+  --avatar-letter-5: oklch(91% .036 95);
+  --avatar-letter-6: oklch(91% .022 190);
+  --avatar-letter-7: oklch(91% .029 130);
+  --avatar-letter-ring-0: oklch(85% .022 85);
+  --avatar-letter-ring-1: oklch(85% .022 250);
+  --avatar-letter-ring-2: oklch(85% .022 300);
+  --avatar-letter-ring-3: oklch(85% .025 30);
+  --avatar-letter-ring-4: oklch(85% .032 55);
+  --avatar-letter-ring-5: oklch(85% .036 95);
+  --avatar-letter-ring-6: oklch(85% .022 190);
+  --avatar-letter-ring-7: oklch(85% .029 130);
+  --background: oklch(100% 0 0);
+  --foreground: oklch(14.5% 0 0);
+  --card: oklch(100% 0 0);
+  --card-foreground: oklch(14.5% 0 0);
+  --popover: oklch(100% 0 0);
+  --popover-foreground: oklch(14.5% 0 0);
+  --primary: oklch(64.68% .1856 254.08);
+  --primary-foreground: oklch(97% .014 254.604);
+  --secondary: oklch(96.7% .001 286.375);
+  --secondary-foreground: oklch(21% .006 285.885);
+  --muted: oklch(97% 0 0);
+  --muted-foreground: oklch(55.6% 0 0);
+  --accent: oklch(97% 0 0);
+  --accent-foreground: oklch(20.5% 0 0);
+  --descriptive-action-hover: var(--foreground);
+  --destructive: oklch(58% .22 27);
+  --gold: oklch(88.44% .0654 90.86);
+  --gold-foreground: oklch(26.68% .0151 124.15);
+  --gold-muted: oklch(95.23% .0274 90.91);
+  --gold-accent: oklch(53% .0878 83.91);
+  --graphite: oklch(25.27% .0048 174.03);
+  --graphite-foreground: oklch(96.85% .0079 106.55);
+  --graphite-muted-foreground: oklch(84.6% .0118 128.62);
+  --graphite-border: oklch(35.8% .0115 134.99);
+  --border: oklch(92.2% 0 0);
+  --input: oklch(92.2% 0 0);
+  --ring: var(--primary);
+  --chart-1: oklch(71.47% .1442 255.14);
+  --chart-2: oklch(63% .17 285);
+  --chart-3: oklch(70% .13 155);
+  --chart-4: oklch(64% .14 25);
+  --chart-5: oklch(78% .16 75);
+  --chart-6: oklch(72% .12 210);
+  --radius: .55rem;
+  --sidebar: oklch(98.5% 0 0);
+  --sidebar-foreground: oklch(25% 0 0);
+  --sidebar-primary: oklch(54.6% .245 262.881);
+  --sidebar-primary-foreground: oklch(97% .014 254.604);
+  --sidebar-accent: oklch(95.51% 0 0);
+  --sidebar-accent-foreground: oklch(20.5% 0 0);
+  --sidebar-border: oklch(92.2% 0 0);
+  --sidebar-ring: var(--ring);
+  --actor-user: #c46686;
+  --actor-agent: #5992dd;
+  --actor-subagent: #8b5cf6;
+  --actor-error: #cf3a3a;
+  --actor-tool: var(--muted);
+  --actor-system: var(--background);
+  --timeline-tool: #a8a7a2;
+  --timeline-subagent: #8b5cf6;
+  --card-type-virtual-surface: #d1edfb;
+  --card-type-virtual-icon: oklch(42% .1 240);
+  --card-type-physical-surface: #f9eaca;
+  --card-type-physical-icon: oklch(48% .09 75);
+  --card-type-merchant-locked-surface: #d9f3dd;
+  --card-type-merchant-locked-icon: oklch(45% .09 150);
+  --card-type-time-limited-surface: oklch(94% .035 300);
+  --card-type-time-limited-icon: oklch(45% .1 300);
+  --card-type-spend-capped-surface: oklch(94% .04 30);
+  --card-type-spend-capped-icon: oklch(50% .12 35);
+  --card-type-single-use-surface: #d6f2ef;
+  --card-type-single-use-icon: oklch(45% .07 200);
+  --card-type-agent-surface: oklch(94% .035 350);
+  --card-type-agent-icon: oklch(48% .11 350);
+  --dt-filter-height: 2rem;
+  --dt-filter-radius: 9999px;
+  --dt-filter-padding-x: .5rem;
+  --dt-filter-search-padding-x: .625rem;
+  --dt-filter-search-clear-padding-x: .375rem;
+  --accent-000: #184e95;
+  --accent-100: #2977d6;
+  --accent-200: #2977d6;
+  --accent-900: #cbe1fb;
+  --table-surface: var(--background);
+  --table-row-hover: var(--muted);
+}
+
+/* ---------- Semantic + component tier: dark (their .dark). REFERENCE ONLY: not applied by the prototype. ---------- */
+.dark {
+  color-scheme: dark;
+  --avatar-foreground: oklch(98.5% 0 0);
+  --sidebar-active: var(--sidebar-accent);
+  --avatar-0: oklch(32% .06 230);
+  --avatar-1: oklch(30% .08 270);
+  --avatar-2: oklch(30% .08 300);
+  --avatar-3: oklch(32% .06 350);
+  --avatar-4: oklch(32% .06 25);
+  --avatar-5: oklch(32% .07 80);
+  --avatar-6: oklch(32% .06 175);
+  --avatar-7: oklch(32% .07 150);
+  --avatar-letter-0: oklch(32% .022 85);
+  --avatar-letter-1: oklch(30% .022 250);
+  --avatar-letter-2: oklch(30% .022 300);
+  --avatar-letter-3: oklch(32% .025 30);
+  --avatar-letter-4: oklch(32% .032 55);
+  --avatar-letter-5: oklch(32% .036 95);
+  --avatar-letter-6: oklch(32% .022 190);
+  --avatar-letter-7: oklch(32% .029 130);
+  --avatar-letter-ring-0: oklch(40% .022 85);
+  --avatar-letter-ring-1: oklch(38% .022 250);
+  --avatar-letter-ring-2: oklch(38% .022 300);
+  --avatar-letter-ring-3: oklch(40% .025 30);
+  --avatar-letter-ring-4: oklch(40% .032 55);
+  --avatar-letter-ring-5: oklch(40% .036 95);
+  --avatar-letter-ring-6: oklch(40% .022 190);
+  --avatar-letter-ring-7: oklch(40% .029 130);
+  --background: oklch(14.5% 0 0);
+  --foreground: oklch(98.5% 0 0);
+  --card: oklch(20.5% 0 0);
+  --card-foreground: oklch(98.5% 0 0);
+  --popover: oklch(20.5% 0 0);
+  --popover-foreground: oklch(98.5% 0 0);
+  --primary: oklch(64.68% .1856 254.08);
+  --primary-foreground: oklch(97% .014 254.604);
+  --secondary: oklch(27.4% .006 286.033);
+  --secondary-foreground: oklch(98.5% 0 0);
+  --muted: oklch(26.9% 0 0);
+  --muted-foreground: oklch(70.8% 0 0);
+  --accent: oklch(37.1% 0 0);
+  --accent-foreground: oklch(98.5% 0 0);
+  --descriptive-action-hover: var(--foreground);
+  --destructive: oklch(70.4% .191 22.216);
+  --gold: oklch(88.44% .0654 90.86);
+  --gold-foreground: oklch(26.68% .0151 124.15);
+  --gold-muted: oklch(32.65% .0278 89.89);
+  --gold-accent: var(--gold);
+  --graphite: oklch(25.27% .0048 174.03);
+  --graphite-foreground: oklch(96.85% .0079 106.55);
+  --graphite-muted-foreground: oklch(84.6% .0118 128.62);
+  --graphite-border: oklch(35.8% .0115 134.99);
+  --border: oklch(100% 0 0/.1);
+  --input: oklch(100% 0 0/.15);
+  --ring: var(--primary);
+  --chart-1: oklch(80.9% .105 251.813);
+  --chart-2: oklch(72% .16 285);
+  --chart-3: oklch(76% .13 155);
+  --chart-4: oklch(72% .14 25);
+  --chart-5: oklch(84% .15 75);
+  --chart-6: oklch(78% .12 210);
+  --sidebar: oklch(20.5% 0 0);
+  --sidebar-foreground: oklch(98.5% 0 0);
+  --sidebar-primary: oklch(62.3% .214 259.815);
+  --sidebar-primary-foreground: oklch(97% .014 254.604);
+  --sidebar-accent: oklch(26.9% 0 0);
+  --sidebar-accent-foreground: oklch(98.5% 0 0);
+  --sidebar-border: oklch(100% 0 0/.1);
+  --sidebar-ring: var(--ring);
+  --actor-user: #c46686;
+  --actor-agent: #5992dd;
+  --actor-subagent: #a78bfa;
+  --actor-error: #cf3a3a;
+  --actor-tool: var(--muted);
+  --actor-system: var(--background);
+  --timeline-tool: #a8a7a2;
+  --timeline-subagent: #a78bfa;
+  --card-type-virtual-surface: oklch(30% .06 240);
+  --card-type-virtual-icon: oklch(82% .1 240);
+  --card-type-physical-surface: oklch(32% .055 75);
+  --card-type-physical-icon: oklch(84% .1 80);
+  --card-type-merchant-locked-surface: oklch(30% .055 150);
+  --card-type-merchant-locked-icon: oklch(82% .1 150);
+  --card-type-time-limited-surface: oklch(30% .06 300);
+  --card-type-time-limited-icon: oklch(82% .09 300);
+  --card-type-spend-capped-surface: oklch(31% .065 30);
+  --card-type-spend-capped-icon: oklch(82% .1 35);
+  --card-type-single-use-surface: oklch(30% .045 200);
+  --card-type-single-use-icon: oklch(84% .07 200);
+  --card-type-agent-surface: oklch(31% .06 350);
+  --card-type-agent-icon: oklch(83% .09 350);
+  --accent-000: #184e95;
+  --accent-100: #2977d6;
+  --accent-200: #2977d6;
+  --accent-900: #cbe1fb;
+}
+
+/* ---------- Shell variant present in the bundle but not wired up in the shipped build ----------
+   The sidebar style context defaults to "classic" and no provider sets "inset". Kept for reference only. */
+[data-app-theme=inset] [data-sidebar-surface] {
+  --sidebar: var(--sidebar-frame);
+  --sidebar-foreground: oklch(100% 0 0);
+  --sidebar-accent: oklch(100% 0 0/.06);
+  --sidebar-active: oklch(100% 0 0/.1);
+  --sidebar-accent-foreground: oklch(100% 0 0);
+  --sidebar-border: oklch(100% 0 0/.08);
+  --foreground: var(--sidebar-foreground);
+  --muted: var(--sidebar-accent);
+  --muted-foreground: oklch(100% 0 0/.56);
+  --accent: var(--sidebar-accent);
+  --accent-foreground: var(--sidebar-foreground);
+  --border: var(--sidebar-border);
+}
+
+/* ---------- Base element rules, as in their bundle ---------- */
+html { font-family: var(--default-font-family); }
+body { background-color: var(--background); color: var(--foreground); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+* { border-color: var(--border); }
+
+/* ---------- Derived from their component code (index-BD7nUOGx.js), not custom properties in their CSS.
+   Named here so a static prototype can use them; each value is the literal from their class strings. ---------- */
+:root {
+  --ds-ring-input: 0 0 0 1px var(--input), var(--shadow-xs);              /* inputs, outline buttons */
+  --ds-ring-border: 0 0 0 1px var(--border), var(--shadow-xs);            /* cards, outline variant */
+  --ds-focus: 0 0 0 1px var(--ring), 0 0 0 3px color-mix(in oklch, var(--ring) 50%, transparent), var(--shadow-xs);
+  --ds-invalid: 0 0 0 1px var(--destructive), 0 0 0 3px color-mix(in oklch, var(--destructive) 20%, transparent), var(--shadow-xs);
+  --ds-dialog-elevation: 0 0 0 1px color-mix(in oklch, var(--foreground) 10%, transparent); /* ring-1 ring-foreground/10 */
+  /* Radius steps: their CSS defines only --radius-md as a property; these are the literal values of
+     their .rounded-sm/.rounded-lg/.rounded-xl/.rounded-2xl utilities. */
+  --radius-sm: calc(var(--radius) - 4px);   /* 4.8px */
+  --radius-lg: var(--radius);               /* 8.8px */
+  --radius-xl: calc(var(--radius) + 4px);   /* 12.8px */
+  --radius-2xl: calc(var(--radius) + 8px);  /* 16.8px */
+  --sidebar-width: 16rem;        /* desktop */
+  --sidebar-width-mobile: 18rem; /* sheet on mobile */
+  --sidebar-width-icon: 3rem;    /* collapsed rail */
+  --app-header-height: 60px;
+
+  /* [code] Overlays */
+  --ds-overlay-modal: rgb(0 0 0 / 0.20);                 /* bg-black/20 + backdrop-blur 2px */
+  --ds-overlay-side-panel: oklch(0.96 0.01 90 / 0.8);    /* warm off-white + backdrop-blur 2px */
+  --ds-overlay-blur: 2px;
+
+  /* [code] Side panel (record detail drawer) */
+  --side-panel-width: min(45rem, 100vw);                   /* full width below 900px */
+  --side-panel-padding: 2rem;                              /* px-8 */
+  --side-panel-header-pt: 4rem;                            /* pt-16 */
+  --side-panel-footer-h: 4rem;                             /* min-h-16 */
+  --side-panel-shadow: 0 12px 20px -14px rgb(16 24 40 / .09), 0 4px 12px 2px rgb(16 24 40 / .1), 0 2px 4px -4px rgb(16 24 40 / .14);
+  --side-panel-ease: cubic-bezier(0.05, 0.7, 0.1, 1);      /* 550ms in, 100ms out, slide 80px from right */
+
+  /* [code] Toast: the product passes these to sonner; the rest is sonner's own stylesheet read live */
+  --normal-bg: var(--popover);
+  --normal-text: var(--popover-foreground);
+  --normal-border: var(--border);
+  --toast-radius: var(--radius);
+  --toast-padding: 16px;
+  --toast-font-size: 13px;
+  --toast-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  --toast-width: 356px;                                    /* sonner library default, set inline by sonner; medium confidence */
+}
+.dark {
+  --ds-invalid: 0 0 0 1px color-mix(in oklch, var(--destructive) 50%, transparent), 0 0 0 3px color-mix(in oklch, var(--destructive) 40%, transparent), var(--shadow-xs);
+}
+
+/* ---------- Website (the reference site) - a separate system. [website], measured live 2026-10-30. ----------
+   Names prefixed --mkt- / --illus- because the site exposes only --pr-bg and untouched shadcn defaults.
+   Use in the product ONLY for brand moments: logo, at most one illustration or highlight per view,
+   first-run / marketing-style empty states, brand icon tiles.
+   --mkt-brand-orange is NEVER an action, link, status, chart or focus colour. Actions stay --primary (#288efb). */
+:root {
+  --mkt-brand-orange: #64748b;   /* neutral accent: CTAs, logo mark. Logo mark in app uses #64748b too */
+  --mkt-ink: #181b25;            /* rgb(24,27,37): headings; also the app logo wordmark (#181B25) */
+  --pr-bg: #171923;              /* their name: dark hero band */
+  --mkt-blue: #387bf0;           /* rgb(56,123,240): treasury page "Get Started" */
+  --mkt-surface: #f6f6f6;        /* rgb(246,246,246) */
+  --mkt-line: #ebebeb;           /* rgb(235,235,235) */
+  --mkt-green: #1cba6b;          /* rgb(28,186,107) */
+  --font-untitled-sans: "untitledSans", "untitledSans Fallback"; /* licensed (Klim); do not load in the prototype */
+
+  /* [website] Spot illustrations: fills/strokes read from the inline SVGs on /treasury */
+  --illus-panel: #f6f6f6;          /* panel behind an illustration, radius 4px */
+  --illus-panel-blue: #cee3fe;     /* alternate pale-blue panel */
+  --illus-card: #ffffff;           /* mock cards inside the illustration, radius 4px */
+  --illus-ink: #181b25;            /* text blocks, glyphs */
+  --illus-ink-muted: #595a5f;
+  --illus-accent: #3b82f6;         /* accent glyphs inside illustrations only */
+  --illus-line: #dbdbdb;           /* 1.5px strokes */
+  --illus-radius: 4px;
+
+  /* [website] Brand icon tile (e.g. "Global Treasury" eyebrow on /treasury) */
+  --brand-tile-bg: #171923;        /* = --pr-bg */
+  --brand-tile-size: 32px;
+  --brand-tile-radius: 6px;
+  --brand-tile-icon: 20px;         /* white glyph */
+
+  /* [website] Display tracking, for display text the app code does not define */
+  --mkt-tracking-32: -0.025em;     /* 32px/500: -0.8px */
+  --mkt-tracking-56: -0.035em;     /* 56px/500: -1.96px */
+}
+
+/* [guessed, low] Chart axis/grid: not observed anywhere. Derived from existing tokens only. */
+:root {
+  --chart-grid: var(--border);
+  --chart-axis-text: var(--muted-foreground); /* 12px */
+}
