@@ -94,9 +94,9 @@
   var SEE = ' Not in public sources.';
   var PH = {
     custodian: ['Custodian to confirm', 'Which custodian holds U.S. T-bills and money market positions. BNY Pershing is sourced only for Gilts and Bunds.' + SEE],
-    coverage: ['Coverage limit to confirm', 'The coverage limit is not confirmed.' + SEE],
+    coverage: ['Coverage limit to confirm', 'The coverage wording and limit are not confirmed.' + SEE],
     sweepBanks: ['Sweep banks to confirm', 'Which banks are in the Insured Cash Sweep network.' + SEE],
-    partnerBank: ['Partner bank to confirm', 'Which partner bank holds this checking account is not known.' + SEE],
+    partnerBank: ['Partner bank to confirm', 'Which partner bank holds this account’s checking is not known.' + SEE],
     sweep: ['Sweep timing to confirm', 'How long cash takes to reach Business Checking when you withdraw from Insured Cash Sweep.' + SEE],
     sale: ['Sale settlement to confirm', 'How long selling a T-bill before maturity takes to settle and land in Business Checking.' + SEE],
     conversion: ['Conversion timing to confirm', 'How long USDC to USD conversion takes to land in Business Checking.' + SEE],
@@ -122,11 +122,11 @@
   ];
   function groupOf(id) { for (var i = 0; i < GROUPS.length; i++) if (GROUPS[i].id === id) return GROUPS[i]; }
 
-  /* The one protection treatment, used everywhere: two states, two labels.
+  /* The one protection treatment, used everywhere: two states with placeholder labels until counsel sets the wording.
      Never green (green means Approved/Completed in the product's map) and never orange. */
   var PROT = {
-    insured: { label: '[Protection label to confirm]', icon: 'shield-check' },
-    uninsured: { label: 'Uninsured', icon: 'shield-off' }
+    insured: { label: '[Protection label A]', icon: 'shield-check' },
+    uninsured: { label: '[Protection label B]', icon: 'shield-off' }
   };
   function prot(g, opts) {
     opts = opts || {};
@@ -212,7 +212,7 @@
 
     // Headline: the two questions, answered from the same numbers
     var dep = groupCents('deposits');
-    $('lede').innerHTML = '<span class="num" data-k="lede1">' + compact(dep, 'round') + '</span> is in deposits. ' +
+    $('lede').innerHTML = '<span class="num" data-k="lede1">' + compact(dep, 'round') + '</span> is [Protection label A]. ' +
       '<span class="num" data-k="lede2">' + compact(inBy(d1), 'floor') + '</span> can be in Business Checking <span data-k="lede3">' + (inBy(d0) === inBy(d1) ? 'today' : 'by ' + fmtDay(d1)) + '</span>.';
 
     $('legend').innerHTML = GROUPS.map(function (g) {
@@ -223,7 +223,7 @@
     var sumBy = function (state) { return GROUPS.filter(function (g) { return g.prot === state; }).reduce(function (a, g) { return a + groupCents(g.id); }, 0); };
     $('protSummary').innerHTML =
       '<li>' + prot({ prot: 'insured', tip: GROUPS[0].tip }, { focus: true }) + '<span class="num">' + compact(sumBy('insured'), 'round') + '</span></li>' +
-      '<li>' + prot({ prot: 'uninsured', tip: 'Securities and stablecoins. Protection wording to confirm.' }, { focus: true }) + '<span class="num">' + compact(sumBy('uninsured'), 'round') + '</span></li>';
+      '<li>' + prot({ prot: 'uninsured', tip: 'Securities and stablecoins. Wording to confirm.' }, { focus: true }) + '<span class="num">' + compact(sumBy('uninsured'), 'round') + '</span></li>';
 
     // Proportional bar, chart series colours, never orange
     $('splitbar').innerHTML = GROUPS.map(function (g) {
